@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    background-color: var(--backgroud);
+    --backgroud: #004643;
+    --text: #ABD1C6;
+    --input: #E8E4E6;
+    --button: #F9BC60;
+    --btnText: #001E1D;
+}
+#textAddNota{
+    text-align: center;
+    color: var(--text);
+    font-weight: bold;
+    margin-top: 2rem;
+}
+#textAddNota .h1{
+    font-size: 87px;
+}
+#textAddNota .p p{
+    margin-top: 1rem;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+#input-notas, #button-adicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input-notas textarea{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--input);
+    margin-bottom: 1rem;
+}
+#button-adicionar button{
+    width: 40rem;
+    height: 2.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--button);
+    color: var(--btnText);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#notas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(23rem, 1fr));
+    gap: 2rem; /* Espaçamento entre os artigos */
+    margin: 3rem 0 3rem 12rem;
+    justify-content: space-around;
+}
+article{
+    background-color: var(--button);
+    width: 23rem;
+    border-radius: 5px;
+    padding: 2rem;
+    font-size: 20px;
+    color: var(--btnText);
+}
+
+

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    --background: #232946;
+    --input: #fffffe;
+    --button: #eebbc3;
+    --btnText: #232946;
+    --text: #b8c1ec;
+}
+.content .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content .text p{
+    font-weight: bold;
+    color: var(--text);
+    margin-top: 2.5rem;
+    max-width: 360px;
+    text-align: center;
+}
+.content .text .h1 p{
+    font-size: 48px;
+}
+.content .text .p p{
+    font-size: 18px;
+}
+.content .inputs{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.content .inputs input{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: .3rem;
+    background-color: var(--input);
+    padding-left: .5rem;
+    border: none;
+}
+.content .inputs button{
+    width: 8.3rem;
+    height: 2.5rem;
+    background-color: var(--button);
+    color: var(--btnText);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: .5rem;
+    border-radius: .3rem;
+    border: none;
+}
+#resultado p{
+    color: var(--button);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+@media screen and (min-width: 990px){
+    .content .text .h1 p{
+        max-width: none;
+        font-size: 78px;
+    }
+    .content .text .p p{
+        max-width: 800px;
+        font-size: 20px;
+    }
+    .content .inputs input{
+        width: 30rem;
+        height: 3rem;
+    }
+    .content .inputs button{
+        width: 9rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+    #resultado p{
+        font-size: 20px;
+    }
+}

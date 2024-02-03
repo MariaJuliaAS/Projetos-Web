@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>NotasHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="content">
+        <section id="adicionar-nota">
+            <div id="textAddNota">
+                <span class="h1"><p>NotasHub</p></span>
+                <span class="p"><p>Seu hub central para suas notas. Gerencie suas anotações com facilidade e eficiência.</p></span>
+            </div>
+            <div id="input-notas">
+                <textarea name="addNota" id="addNota" cols="85" rows="10" placeholder="Faça uma anotação"></textarea>
+            </div>
+            <div id="button-adicionar">
+                <button type="button" id="buttonAdd" onclick="addNota()">Adicionar nota</button>
+            </div>
+        </section>
+
+        <section id="notas"></section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
