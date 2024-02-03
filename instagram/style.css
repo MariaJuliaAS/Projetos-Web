@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--buttom);
+}
+body{
+--body: #fafafa;/*Declarando variavel(a variavel é --background)*/
+--buttom: #0095f6;
+--login-panel: #fff;
+--escrita: #000;
+--border: #e6e6e6;
+
+    background-color: var(--body);
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+#wrapper{
+    height: 100vh;
+}
+#container{
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+.column{
+    flex-grow: 1;
+    width: 50%;
+}
+.left{
+    background-image: url(assets/main-foto.png);
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
+.right{
+    padding-left: 20px;
+}
+.login-panel{
+    background-color: var(--login-panel);
+    border: 1px solid var(--border);
+    text-align: center;
+    padding: 20px;
+}
+.login-panel h1{
+    font-size: 30px;
+    font-style: italic;
+    margin: 15px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+input[type="password"], input[type="text"]{
+    background-color: var(--login-panel);
+    border: 1px solid rgb(236, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: var(--escrita);
+}
+input[type="password"]::placeholder, input[type="text"]::placeholder{
+    color: rbg(165, 164, 164);
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    border: 1px solid #a1a1a1;
+}
+input[type="submit"]{
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: var(--buttom);
+    border-radius: 5px;
+    color: var(--login-panel);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.infobox{
+    background-color: var(--login-panel);
+    height: 60px;
+    border: 1px solid var(--border);
+    margin: 10px auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infobox p a{
+    font-weight: bold;
+    user-select: none;/*não pode selecionar o cadastre-se*/
+}
+.app{
+    margin-top: 20px;
+    text-align: center;
+}
+.buttons{
+    margin-top: 16px;
+
+}
+.buttons img{
+    height: 40px;
+    padding: 0 2px;
+}
+footer{
+    text-align: center;
+    height: 50px;
+    margin-top: -50px;
+}
+footer a{
+    color: var(--escrita);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.text-small{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+}
+#container-signup{
+    margin: 0 auto;
+    min-height: 100%;
+    width: 420px;
+    display: flex;
+    align-items: center;
+}
+.message{
+    margin: 10px 70px;
+}
+.message span{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #8e8e8e;
+}
+.cta-button{
+    width: 320px;
+    margin: 10px 0;
+    height: 30px;
+    border: 0;
+    background-color: var(--buttom);
+    border-radius: 5px;
+    color: var(--login-panel);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.divisor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.line{
+    height: 1px;
+    background-color: var(--border);
+    width: 37%;
+}
+.divisor-tag{
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+}
+
+@media (max-width: 850px){
+    .left{
+        display: none;
+    }
+    #container{
+        width: 70%;
+    }
+    .right{
+        padding-left: 0;
+    }
+}
+@media (max-width: 560px){
+    #container{
+        width: 90%;
+    }
+    #container-signup{
+        width: 90%;
+    }
+    input[type="password"], input[type="text"], input[type="submit"]{
+        width: 85%;
+    }
+    .cta-button{
+        width: 85%;
+    }
+}
